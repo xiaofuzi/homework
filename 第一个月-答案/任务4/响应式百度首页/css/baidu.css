@@ -1,0 +1,375 @@
+/*public css*/
+html * {
+	outline: 0;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: transparent
+}
+html {
+	font-size: 62.5%
+}
+body,
+html {
+	min-width: 320px;
+	width: 100%;
+	height: 100%
+}
+body,
+button,
+input,
+select,
+table,
+textarea {
+	font-size: 1.4rem;
+	line-height: 1.4rem
+}
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+select {
+	-webkit-appearance: none
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none!important;
+	margin: 0
+}
+a {
+	text-decoration: none
+}
+.cf {
+	zoom: 1
+}
+.cf:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden
+}
+
+img,
+input,
+label,
+select {
+	vertical-align: middle
+}
+
+
+
+/*header style*/
+header{
+	width: 100%;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+/*用户信息*/
+header .userinfo-wrap{
+	position: relative;
+	width: 100%;
+	height: 5rem;
+}
+
+header .userinfo-wrap .weather-data{
+	width: 15rem;
+	height: 5rem;
+	text-align: left;
+}
+
+.userinfo-wrap .weather-data .w-data{
+	height: 4.5rem;
+	font-size: 3rem;
+	color: #666;
+	display: inline-block;
+}
+
+.userinfo-wrap .weather-data .icon-sun{
+	font-size: 2.4rem;
+}
+
+.userinfo-wrap .weather-data .weather-status{
+	display: inline-block;
+	height: 3rem;
+	color: #666;
+	padding: 5px;
+	border-left:1px solid #ddd;
+}
+
+header .userinfo-wrap .icon-user{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	font-size: 2.6rem;
+	color: #666;
+}
+/*百度logo*/
+header .logo{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+header .logo img{
+	width: 17.5rem;
+	height: 5.5rem;
+}
+
+/*搜索框*/
+header .search-form{
+	position: relative;
+	margin: 0 1rem;
+	border: 1px solid #8d9394;
+	border-radius: 1px;
+	display: -webkit-flex;
+}
+
+header .search-input{
+	padding-left: 5px;
+	height: 4rem;
+	border: none;
+	font-size: 2rem;
+	-webkit-flex-grow: 1;
+}
+
+header .search-form i{
+	position: absolute;
+	top: 1rem;
+	right: 8rem;
+	font-size: 2.4rem;
+	line-height: 1;
+	color: #333;
+}
+header .search-form i:hover{
+	color: #2d78f4;
+}
+
+header .search-btn{
+    width: 8rem;
+    height: 4rem;
+    background: #ececec;
+    background: -webkit-linear-gradient(top,#f9f9f9,#e7e9eb);
+    color: #46484b;
+    -webkit-box-shadow: 0 0 0 1px #fff inset;
+    box-shadow: 0 0 0 1px #fff inset;
+    -webkit-text-shadow: 0 1px 0 #fafafa;
+    text-shadow: 0 1px 0 #fafafa;
+    line-height: 4rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border: none;
+    border-left: 1px solid #8d9394;
+}
+
+/*站点导航*/
+header .site-nav{
+	padding: 0 2%;
+	height: 4.3rem;
+	margin: 1.7rem 0 1.4rem;
+}
+
+header nav a{
+	display: block;
+	float: left;
+	width: 16%;
+	height: 4.3rem;
+	font-size: 1.3rem;
+	color: #333;
+}
+
+header nav a i{
+	display: block;
+	height: 2.4rem;
+	width: 35px;
+	padding-bottom: 0.4rem;
+	margin: 0 auto;
+	background: url("../img/baidu-icons.png") no-repeat;
+}
+
+header nav a:nth-of-type(1)  i{
+	background-position:0 -30px;
+}
+
+header nav a:nth-of-type(2)  i{
+	background-position:1px -55px;
+}
+
+header nav a:nth-of-type(3)  i{
+	background-position:1px -79px;
+}
+
+header nav a:nth-of-type(4)  i{
+	background-position:0 -248px;
+}
+
+header nav a:nth-of-type(5)  i{
+	background-position:0 -103px;
+}
+
+header nav a:nth-of-type(6)  i{
+	background-position:0 -128px;
+}
+
+header nav a:nth-of-type(7)  i{
+	background-position:-3px -190px;
+}
+
+/*middle-banner*/
+.middle-banner{
+	width: 100%;
+	padding: 1rem 1rem 0;
+}
+
+.middle-banner a{
+	display: block;
+	width: 100%;
+	height: 4.2rem;
+	border: 1px solid #d9d9d9;
+}
+
+.middle-banner .middle-banner-img {
+    height: 4rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    background: url("../img/middle-banner-img.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/*内容信息卡片*/
+.title-icon{
+	position: absolute;
+	top: 0.8rem;
+	color: #2d78f4;
+}
+
+
+.plus-card{
+	padding: 1rem 1rem 0;
+	font-size: 1.4rem;
+}
+
+.plus-card .card{
+	padding: 0.5rem;
+	margin-bottom: 2rem;
+	border: 1px solid #d9d9d9;
+}
+
+.plus-card .card .card-title{
+	position: relative;
+	height: 3rem;
+	line-height: 3rem;
+}
+
+.plus-card .card .card-title h2{
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #aaa;
+	padding-left: 20px;
+}
+
+.plus-card .card .card-title .i-right{
+	position: absolute;
+	right: 3px;
+	top: 0;
+	width: 40px;
+	height: 34px;
+}
+
+.plus-card .used-sites .site-list{
+	width: 100%;
+}
+
+.plus-card .used-sites .site-list a{
+	display: block;
+	float: left;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem;
+	width: 25%;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	text-align: center;
+	color: #333;
+}
+
+/*实时热点*/
+.hot-news .news-list a{
+	display: block;
+	width: 50%;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	float: left;
+	color: #333;
+}
+
+/*生活服务*/
+.live-server .server-list li{
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+}
+
+.live-server .server-list li a{
+	display: inline-block;
+	color: #333;
+}
+
+.live-server .server-list li a i{
+	display: block;
+	width: 42px;
+	height: 42px;
+	background:url("../img/2.gif") no-repeat;
+	background-size: 100% 100%;
+}
+
+.live-server .server-list li a p{
+	height: 1.8rem;
+	line-height: 1.8rem;
+}
+
+/*交通路况*/
+.out-home .user-info{
+	height: 8rem;
+	text-align: center;
+}
+.out-home .user-info p{
+	margin-bottom: 1rem;
+}
+
+/*footer style*/
+footer{
+	padding: 1rem;
+}
+
+footer .user-set a{
+	display: block;
+	height: 2.4rem;
+	width: 47%;
+	line-height: 2.4rem;
+	color: #555;
+	font-size: 1.3rem;
+	border: 1px solid #ececec;
+	text-align: center;
+}
+
+footer .user-set a:nth-of-type(1){
+	float: left;
+}
+
+footer .user-set a:nth-of-type(1){
+	float: right;
+}
+
+footer .copy-right{
+	font-size: 1rem;
+    line-height: 2rem;
+    padding: 3.5rem 0 1.3rem;
+    color: #aaa;
+    text-align: center;
+}
+
+
+
+
+

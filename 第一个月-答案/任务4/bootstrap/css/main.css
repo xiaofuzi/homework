@@ -1,0 +1,57 @@
+/*
+* public css
+*/
+html,body{
+	min-width: 320px;
+}
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+/*header setting*/
+.wrapper header{
+	background-color: #fff;
+}
+
+.wrapper header img{
+	width: 103px;
+	height: 30px;
+}
+
+/*图标间距设置*/
+.side-nav li i{
+	margin-right: 5px;
+}
+
+/*表格设置*/
+.content .panel table{
+	text-align: center;
+}
+@media (min-width: 768px){
+	/*侧边栏*/
+	.side-nav li{
+		width: 200px;
+		border-bottom: 1px solid #e7e7e7;
+	}
+	.side-nav {
+	    position: absolute;
+	    top: 60px;
+	    left: 0px;
+	    width: 200px;
+	    border: 1px solid #e7e7e7;
+	    border-radius: 0;
+	    padding-bottom: 40px;
+	    background-color: #f8f8f8;
+	}
+	/*主体部分*/
+	.wrapper .main{
+		margin-left: 200px;
+	}
+}
+
+
+

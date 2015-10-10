@@ -1,0 +1,364 @@
+/*reset css*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+input{
+	outline: none;
+	padding-left: 5px; 
+}
+button{
+	outline: none;
+}
+
+li{
+	list-style: none;
+}
+
+
+html,body{
+	height: 100%;
+	font:12px arial;  
+}
+
+
+body{
+	position: relative;
+	height: 100%;
+	min-width: 1000px;
+	min-height: 600px;
+	_height: 600px;
+}
+
+/*page header*/
+.header{
+	overflow: hidden;
+}
+
+.header .nav{
+	width: 410px;
+	+width: 430px;
+	_width: 440px;
+	height: 50px;
+	float: right;
+	padding-top: 18px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.header .nav a.baidu-nav{
+	margin-right: 15px;
+	color: #333;
+}
+
+.header .nav a.baidu-nav:hover{
+	color: #00c;
+}
+
+/*
+* 百度设置下拉菜单样式
+*/
+.header .nav .setting-menu{
+	position: absolute;
+	top: 18px;
+	+top: 19px;
+	_top: 20px;
+	right: 84px;
+	width: 57px;
+	height: 100px;
+}
+
+.header .nav .setting-menu .baidu-nav{
+	display: inline-block;
+	width: 55px;
+	text-align: center;
+	margin: 0;
+}
+
+.baidu-setting{
+	position: absolute;
+	top: 25px;
+	right: 0;
+	width: 55px;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 5px #ddd;
+	font-size: 12px;
+	z-index: 99;
+	display: none;
+}
+
+.baidu-setting a{
+	display: inline-block;
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	color: #333;
+	text-align: center;
+	text-decoration: none;
+}
+
+.baidu-setting a:hover{
+	color: #fff;
+	background-color: #3385ff; 
+}
+/*下拉菜单三角形状*/
+.baidu-setting .setting-icon{
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -5px;
+}
+
+.baidu-setting .setting-icon em,
+.baidu-setting .setting-icon i{
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	position: absolute;
+	border: 5px solid transparent;
+	border-style: dashed dashed solid dashed;
+}
+
+.baidu-setting .setting-icon em{
+	border-bottom-color: #d8d8d8;
+	top:-1px;
+}
+
+.baidu-setting .setting-icon i{
+	border-bottom-color: #fff;
+	top: 0;
+}
+
+/*more product css style*/
+.more{
+	position: absolute;
+	top:13px;
+	right: 2px;
+	width: 64px;
+	height: 24px;
+	line-height: 24px;
+	padding:0 5px 0 5px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	background-color: #3385ff;
+}
+
+a.more{
+	color:#ffffff;
+}
+
+a.more:hover,
+a.more:visited{
+	color:#ffffff;
+	background-color: #317ef3;
+}
+
+/*
+* 更多产品侧边栏
+*/
+.more-product{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 76px;
+	border-left: 1px solid #ddd;
+	background-color: #f9f9f9;
+	display: none;
+}
+
+.more-product ul{
+	padding: 0 5px 0 5px;
+}
+
+.more-product li{
+	position: relative;
+	height: 70px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+.more-product li a{
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 50px;
+	left: 5px;
+	top: 10px;
+	text-decoration: none;
+	text-align: center;
+	color: #666;
+}
+
+.more-product li a:hover{
+	text-decoration: underline;
+}
+
+.more-product li i{
+	position: relative;
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	background: url("../img/bdbri_icons.png") no-repeat;
+}
+
+.more-product li.li-one{
+	height: 50px;
+}
+
+.more-product li.li-one a{
+	height: 50px;
+	line-height: 50px;
+	top: 0;
+}
+
+.more-product li.li-three i{
+	background-position: -36px 0;
+}
+
+.more-product li.li-four i{
+	background-position: -72px 0;
+	width: 40px;
+}
+
+.more-product li.li-five i{
+	background-position: -112px 0;
+	width: 32px;
+}
+
+.more-product li.li-six i{
+	background-position: -146px 0;
+}
+
+.more-product li.li-seven i{
+	background-position: -183px 0;
+}
+
+.more-product li.li-eight i{
+	background-position: -220px 0;
+}
+
+/*主体部分布局*/
+.container{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	margin-left: -500px;
+	width: 1000px;
+	text-align: center;
+}
+
+/*logo style*/
+.container img.baidu-logo{
+	width: 270px;
+	height: 129px;
+	margin-bottom: 20px;
+}
+
+/*search box style*/
+.container .search-box{
+	position: relative;
+	width: 650px;
+	height: 37px;
+	margin: 0 auto;
+}
+
+
+.container .search-box input{
+	display: inline-block;
+	height: 36px\0;
+	height: 34px\9\0;
+	*height: 35px;
+	width: 540px;
+	border: 1px solid #ddd;
+	float: left;
+	vertical-align: 20px;
+	line-height: 34px;
+}
+
+.container .search-box input:hover{
+	border:1px solid #b8b8b8;
+}
+
+.container .search-box input:focus{
+	border:1px solid #3385ff;
+}
+
+/*mic icon setting*/
+.container .mic-icon{
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 32px;
+	top: 1px;
+	right: 100px;
+	background: url('../img/mic_icon.png') no-repeat;
+	background-position: -24px 5px; 
+}
+
+.container .mic-icon:hover{
+	cursor: pointer;
+	background-position: -24px -23px;
+}
+
+.container .search-box button{
+	display: block;
+	width: 100px;
+	height: 36px;
+	float: left;
+	font-size: 15px;
+	color: #fff;
+	border: none 0;
+	background-color: #3385ff;
+}
+
+.container .search-box button:hover{
+	cursor: pointer;
+	font-size: 15px;
+	background-color: #317ef3;
+	border: none 0;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	font-size: 12px;
+	height: 120px;
+	width: 1000px;
+	margin-left: -500px;
+	text-align: center;
+	color: #666;
+}
+
+.footer a,.footer a:hover{
+	color: #666;
+}
+
+.footer .about-line a{
+	display: inline-block;
+	margin: 10px 20px 10px 0;
+	color: #00c;
+}
+
+.footer .about-line a:hover{
+	color: #00c;
+}
+
+.footer .baidu-copy .copy-icon{
+	display: inline-block;
+	width: 15px;
+	height: 17px;
+	background: url("../img/copy-icon.gif") no-repeat;
+}

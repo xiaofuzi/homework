@@ -1,0 +1,113 @@
+/*清除浮动*/
+.clearfix:after{
+	content: "";
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+}
+
+body{
+	background: url("../img/bg.png") repeat;
+	background-size: 100%;
+}
+
+/*
+* login container
+*/
+
+.container header{
+	margin-top: 200px;
+	text-align: center;
+}
+
+.container header h2{
+	color: #fff;
+	font-size: 38px;
+	font-weight: 500;
+}
+
+.container .wrap{
+	text-align: center;
+}
+
+.container .wrap .reg-login{
+	width: 400px;
+	margin: 0 auto;
+}
+
+.wrap .reg-login .form-head a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 20px;
+	width: 50%;
+	float: left;
+	color: #ddd;
+	font-size: 24px;
+	text-decoration: none;
+	background-color: #fff;
+}
+
+.wrap .reg-login .form-head a:hover{
+	color: #666;
+}
+
+
+.wrap .form-body{
+	padding: 20px;
+	color: #666;
+	text-align: center;
+	background-color: rgba(238,238,238,0.4);
+}
+
+
+.wrap .form-body .fregister{
+	display: block;
+}
+
+.wrap .form-body .flogin{
+	display: none;
+}
+
+.wrap .form-body input{
+	display: block;
+	margin-bottom: 20px;
+	height: 40px;
+	border: none;
+	background-color: rgb(233,233,233);
+}
+.wrap .form-body button{
+	width: 100%;
+	color: #fff;
+	height: 40px;
+	background-color: #0e0e0e;
+}
+
+
+/*显示控制*/
+.active{
+	color: #fff !important;
+	background-color: #0e0e0e !important;
+}
+
+
+/*手机屏幕适配*/
+@media (max-width: 768px){
+	html,body{
+		height: 100%;
+	}
+
+	body{
+		min-width: 300px;
+		background: #ddd;
+	}
+
+	.container header{
+		margin-top: 100px;
+	}
+
+	.container .wrap .reg-login{
+		width: 100%;
+	}
+}

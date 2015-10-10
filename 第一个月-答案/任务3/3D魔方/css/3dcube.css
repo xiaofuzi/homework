@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+html,body{
+	height: 100%;
+}
+
+/*title style*/
+.header{
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.wrap{
+	position: absolute;
+	height: 153px;
+	width: 153px;
+	top: 50%;
+	left: 50%;
+	margin-top: -76px;
+	margin-left: -76px;
+	
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform: rotateY(80deg) rotateZ(-175deg); 
+}
+
+.wrap:hover{
+	-webkit-animation-play-state:paused;
+}
+
+/*
+* 三层位置设置
+*/
+.wrap .front-side{
+	position: absolute;
+}
+
+.wrap .middle-side{
+	position: absolute;
+	transform: translateZ(-50px);
+}
+
+.wrap .back-side{
+	position: absolute;
+	transform: translateZ(-100px);
+}
+
+
+/*
+* 单个立方块
+*/
+.wrap .box{
+	height: 51px;
+	width: 51px;
+	float: left;
+	-webkit-transform-style:preserve-3d;
+}
+
+
+.wrap .box li{
+	position: absolute;
+	display: block;
+	height: 50px;
+	width: 50px;
+	transform-origin: center center;
+}
+
+.wrap .box .front{
+	background-color: red;
+	transform: translateZ(25px);
+}
+
+.wrap .box .back{
+	background-color: #c9a;
+	transform: translateZ(-25px) rotateX(180deg);
+}
+
+.wrap .box .left {
+    background: #65a;
+    transform: translateX(-25px) rotateY(270deg);
+}
+
+.wrap .box .right {
+    background: #65a;
+    transform: translateX(25px) rotateY(-270deg) ;
+}
+    
+.wrap .box .top {
+    background: #6c3;
+    transform: translateY(-25px) rotateX(-270deg);
+}
+    
+.wrap .box .bottom {
+    background: #cf3;
+    transform: translateY(25px) rotateX(270deg);
+}
+
+
+
+
+
+
+
+
+
+
+

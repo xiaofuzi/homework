@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>盒子模型和弹性盒子模型</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<!--正常盒子与怪异盒子的比较-->
+		<div class="box">
+			<div class="normal-box">正常盒子
+			</div>
+			<div class="weird-box">怪异盒子</div>
+			<ul>
+				<li>width: 100px;</li>
+				<li>height: 100px;</li>
+				<li>padding: 10px;</li>
+				<li>border: 5px solid rgb(0, 255, 0);</li>
+			</ul>
+		</div>
+		<!--end 正常盒子与怪异盒子的比较-->
+		<!-- 多列布局 -->
+		<div class="col-1">
+			<h2>列数固定</h2>
+			<p>
+				1. 声明式构建和合约构建
+				Gradle 的核心是基于 Groovy 的 领域特定语言 (DSL), 具有十分优秀的扩展性. Gradle 通过提供可以随意集成的声明式语言元素将声明性构建推到了一个新的高度. 这些元素还提供了对 Java, Groovy, OSGi, 网络和Scala 等项目的支持. 而且, 基于这种声明式语言的可扩展性. 你可以添加自己的语言元素或加强现有的语言元素, 从而提供简洁, 易于维护和易于理解的构建.
+				2. 基于依赖的编程语言
+				声明式语言位于通用任务图 ( general purpose task graph ) 的顶端，它可以被充分利用在你的构建中. 它具有强大的灵活性, 可以满足使用者对 Gradle 的一些特别的需求.
+				3. 让构建结构化
+				Gradle 的易适应性和丰富性可让你在构建里直接套用通用的设计原则. 例如, 你可以非常容易容易的使用一些可重用的组件来构成你的构建. Inline stuff where unnecessary indirections would be inappropriate. 不要强行分离已经结合在一起的部分 (例如, 在你的项目层次结构中). 避免使构建难以维护. 总之, 你可以创建一个结构良好，易于维护, 易于理解的构建.
+				4. API深化
+				你会非常乐意在整个构建执行的生命周期中使用 Gradle, 因为Gradle 允许你管理和定制它的配置和执行行为.
+				5. Gradle scales
+				Gradle scales very well. 不管是简单的独立项目还是大型的多项目构建, 它都能显著的提高效率. 它不仅可以提供最先进的构建功能，还可以解决许多大公司碰到的构建 性能低下的问题.
+			</p>
+		</div>
+		<div class="col-2">
+			<h2>列宽固定</h2>
+			<p>
+				1. 声明式构建和合约构建
+				Gradle 的核心是基于 Groovy 的 领域特定语言 (DSL), 具有十分优秀的扩展性. Gradle 通过提供可以随意集成的声明式语言元素将声明性构建推到了一个新的高度. 这些元素还提供了对 Java, Groovy, OSGi, 网络和Scala 等项目的支持. 而且, 基于这种声明式语言的可扩展性. 你可以添加自己的语言元素或加强现有的语言元素, 从而提供简洁, 易于维护和易于理解的构建.
+				2. 基于依赖的编程语言
+				声明式语言位于通用任务图 ( general purpose task graph ) 的顶端，它可以被充分利用在你的构建中. 它具有强大的灵活性, 可以满足使用者对 Gradle 的一些特别的需求.
+				3. 让构建结构化
+				Gradle 的易适应性和丰富性可让你在构建里直接套用通用的设计原则. 例如, 你可以非常容易容易的使用一些可重用的组件来构成你的构建. Inline stuff where unnecessary indirections would be inappropriate. 不要强行分离已经结合在一起的部分 (例如, 在你的项目层次结构中). 避免使构建难以维护. 总之, 你可以创建一个结构良好，易于维护, 易于理解的构建.
+				4. API深化
+				你会非常乐意在整个构建执行的生命周期中使用 Gradle, 因为Gradle 允许你管理和定制它的配置和执行行为.
+				5. Gradle scales
+				Gradle scales very well. 不管是简单的独立项目还是大型的多项目构建, 它都能显著的提高效率. 它不仅可以提供最先进的构建功能，还可以解决许多大公司碰到的构建 性能低下的问题.
+			</p>
+		</div>
+		<!-- end 多列布局 -->
+		<!-- 旧伸缩盒 -->
+		<div class="flex-box">
+			<div class="one">
+				Ant 的 tasks是 Gradle 中很重要的部分, 更有趣是 Ant 的 projects 也是十分重要的部分. Gradle 可以直接引入Ant project, 并在运行时直接将 Ant targets 转换成 Gradle tasks. 你可以在从 Gradle 中依赖它们, 并增强它们的功能, 甚至在 build.xml 中声明 Gradle tasks 的依赖. 并且properties, paths 等也可以通过同样的方法集成进来.
+			</div>
+			<div class="two">
+				Gradle 完全支持 Maven 或者 lvy 仓库来发布或者提取依赖. Gradle 也提供了一个转化器, 用来将 maven 的 pom.xml 转换成 Gradle 脚本. 运行时引入 Maven 项目也会在稍后推出.
+			</div>
+			<div class="three">
+				Gradle 完全支持 Maven 或者 lvy 仓库来发布或者提取依赖. Gradle 也提供了一个转化器, 用来将 maven 的 pom.xml 转换成 Gradle 脚本. 运行时引入 Maven 项目也会在稍后推出.
+			</div>
+		</div>
+		<!-- end 旧伸缩盒 -->
+		<!-- end 新伸缩盒 -->
+		<div class="flex">
+			<div class="one">Gradle scales very well. 不管是简单的独立项目还是大型的多项目构建, 它都能显著的提高效率. 它不仅可以提供最先进的构建功能，还可以解决许多大公司碰到的构建 性能低下的问题.
+			不管是简单的独立项目还是大型的多项目构建, 它都能显著的提高效率. 它不仅可以提供最先进的构建功能，还可以解决许多大公司碰到的构建 性能低下的问题.
+			不管是简单的独立项目还是大型的多项目构建, 它都能显著的提高效率. 它不仅可以提供最先进的构建功能，还可以解决许多大公司碰到的构建 性能低下的问题.</div>
+			<div class="two">Gradle scales very well. 不管是简单的独立项目还是大型的多项目构建, 它都能显著的提高效率. 它不仅可以提供最先进的构建功能，还可以解决许多大公司碰到的构建 性能低下的问题.</div>
+			<div class="three">Gradle scales very well. 不管是简单的独立项目还是大型的多项目构建, 它都能显著的提高效率. 它不仅可以提供最先进的构建功能，还可以解决许多大公司碰到的构建 性能低下的问题.</div>
+		</div>
+		<div class="flex second">
+			<div class="one"></div>
+			<div class="two"></div>
+			<div class="three"></div>
+		</div>
+		<!-- end 新伸缩盒 -->
+	</div>
+</body>
+</html>
