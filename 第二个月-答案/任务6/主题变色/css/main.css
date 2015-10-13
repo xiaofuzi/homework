@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+input,button{
+	outline: none;
+}
+
+li{
+	list-style: none;
+}
+
+/*public*/
+.cf {
+	zoom: 1
+}
+.cf:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden
+}
+
+.icon-down {
+	display: inline-block;
+    width: 9px;
+    height: 6px;
+    background: url(../images/header.png) no-repeat -52px -97px;
+    margin-left: 4px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+}
+
+.w-1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.green{
+	background-color: #0aa770 !important;
+}
+
+.red{
+	background-color: rgb(255, 0, 0) !important;
+}
+
+.yellow{
+	background-color: rgb(255, 255, 0) !important;
+}
+
+.blue{
+	background-color: rgb(0, 255, 255) !important;
+}
+
+.text-green{
+	color: #0aa770;
+}
+
+.text-red{
+	color: rgb(255, 0, 0);
+}
+
+.text-yellow{
+	color: rgb(255, 255, 0);
+}
+
+.text-blue{
+	color: rgb(0, 255, 255);
+}
+
+.wrapper{
+	min-width: 1200px;
+	font-size: 12px;
+}
+
+/*导航栏样式设置*/
+.wrapper header{
+	padding: 0 20px;
+	height: 60px;
+	border-bottom: 1px solid #eee;
+}
+
+header .logo{
+	width: 190px;
+	height: 60px;
+	float: left;
+}
+
+header .sethome{
+	width: 60px;
+    height: 25px;
+    left: 192px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-right: 22px;
+    display: block;
+    float: left;
+    color: #fff;
+    text-align: center;
+    background: url(../images/header.png) no-repeat -20px -172px;
+}
+
+header .city-info{
+	width: 280px;
+	float: left;
+}
+
+header .city-info:hover{
+	background-color: #eee;
+}
+
+header .city-info .weather{
+	display: inline-block;
+	width: 52px;
+	height: 60px;
+	line-height: 60px;
+}
+
+.city-info .cloud .c-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 27px;
+    background-image: url(../images/a1.png);
+}
+
+.city-info .calendar {
+    text-align: center;
+    display: inline-block;
+    width: 114px;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+    cursor: pointer;
+}
+
+.city-info .calendar .c-day {
+    display: inline-block;
+    width: 24px;
+    height: 60px;
+    line-height: 60px;
+    font-family: 'arial';
+    background: url(../images/header.png) no-repeat -20px -62px;
+}
+
+.links {
+    float: right;
+    height: 60px;
+    padding: 0 10px 0 0;
+    position: relative;
+}
+
+.links a {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 0 0 31px;
+    text-align: left;
+    color: #999;
+}
+
+.links .login {
+    background: url(../images/header.png) no-repeat -30px -110px;
+}
+
+.links .mail {
+    background: url(../images/header.png) no-repeat -95px -110px;
+}
+
+.links .browser {
+    background: url(../images/header.png) no-repeat -160px -110px;
+}
+
+.links .sikn {
+    background: url(../images/header.png) no-repeat -240px -110px;
+}
+
+
+.search-box{
+	position: relative;
+	padding-top: 40px;
+}
+
+.search-box .search-box1{
+	width: 800px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.search-box1 img{
+	float: left;
+	width: 104px;
+	height: 34px;
+	margin-right: 5px;
+}
+
+.search-box1 input{
+	padding-left: 5px;
+	height: 38px;
+	width: 540px;
+	float: left;
+	border: 1px solid #999;
+}
+
+.search-box1 button{
+	height: 40px;
+	width: 140px;
+	cursor: pointer;
+	float: left;
+	border: 1px solid #999;
+	border-left: 0;
+	background-color: #eee;
+	font-size: 14px;
+}
+
+.search-box .change-theme{
+	position: absolute;
+	width: 140px;
+	right: 50px;
+	top: 70px;
+}
+
+.search-box .change-theme span{
+	display: block;
+	float: left;
+}
+
+.search-box .change-theme ul{
+	width: 80px;
+	float: left;
+}
+
+.search-box .change-theme li{
+	display: block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.search-box .hot-words{
+	width: 800px;
+	margin: 10px auto;
+}
+
+.search-box .hot-words .hotbox{
+	margin-left: 110px;
+}
+
+.search-box .hot-words .hotbox li{
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+.search-box .hot-words .hotbox a:hover{
+	decoration: underline;
+	color: red;
+}
+
+.container nav ul.menu{
+	padding-top: 2px;
+	background-color: #0aa770;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+}
+
+.container nav ul.menu li{
+	display: block;
+	float: left;
+	font-size: 14px;
+	height: 38px;
+	line-height: 38px;
+	width: 120px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.container nav ul.menu li.active{
+	background-color: #0aa770;
+}
+.container nav ul.menu li.active a,
+.container nav ul.menu li.active:hover a{
+	color: #ffffff;
+}
+
+.container nav ul.menu li:hover a{
+	color: #0aa770;
+}

@@ -1,0 +1,63 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+/*清除浮动*/
+.cf {
+    zoom: 1
+}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden
+}
+
+
+.calcBox{
+    font-size: 24px;
+    width: 280px;
+    margin: 200px auto 0 auto;
+    border:1px solid #ccc;
+}
+
+.calcBox .calcHead{
+    height: 60px;
+    width: 280px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    text-align: right;
+    color: #ffffff;
+    background-color: rgba(150, 150, 150, 0.5);
+}
+
+.calcBox .calcHead span{
+    display: block;
+    padding-right: 10px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.calcBox .calcBody{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.calcBox .calcBody button{
+    height: 70px;
+    width: 70px;
+    float: left;
+    color: #666;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.calcBox .calcBody button:hover{
+    color: #333;
+}

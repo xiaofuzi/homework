@@ -5,10 +5,74 @@
 
 html,body{
 	height: 100%;
+	width: 100%;
+}
+
+/*描述说明*/
+header{
+	position: fixed;
+	width: 100%;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+	background-color: #ccc;
+}
+
+header ul{
+	margin: 10px 0 0 40px;
+}
+
+header ul li{
+	font-size: 14px;
+	line-height: 20px;
 }
 
 
+/*外层容器*/
+.container{
+	position: relative;
+	height: 100%;
+}
+
 .wrap{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border: 4px solid #ddd;
+}
+
+.box div{
+	width: 100px;
+	height: 100px;
+	box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+}
+
+/*颜色设置提取*/
+.top{
+	text-align: center;
+	line-height: 100px;
+	background-color: rgb(225, 238, 210);
+}
+
+.right{
+	background-color: rgb(219, 208, 167);
+}
+
+.bottom{
+	background-color: rgb(230, 155, 3);
+}
+
+.left{
+	background-color: rgb(209, 73, 78);
+}
+
+.middle{
+	border-radius: 50%;
+	background: rgb(18, 53, 85) url("../img/mix.png") no-repeat center;
+	background-size: 24px 24px;
+}
+
+/*1.绝对定位布局*/
+.container .box{
 	position: absolute;
 	width: 300px;
 	height: 300px;
@@ -18,45 +82,63 @@ html,body{
 	margin-left: -150px;
 }
 
-.wrap div{
-	width: 100px;
-	height: 100px;
-	box-shadow:5px 5px 5px rgba(0,0,0,0.6);
-}
-
-.top{
+.box1 .top{
 	position: absolute;
 	top: 0;
 	left: 100px;
-	background-color: rgb(225, 238, 210);
 }
 
-.right{
+.box1 .right{
 	position: absolute;
 	top: 100px;
 	right: 0;
-	background-color: rgb(219, 208, 167);
 }
 
-.bottom{
+.box1 .bottom{
 	position: absolute;
 	top: 200px;
 	left: 100px;
-	background-color: rgb(230, 155, 3);
 }
 
-.left{
+.box1 .left{
 	position: absolute;
 	top: 100px;
 	left: 0;
 	background-color: rgb(209, 73, 78);
 }
 
-.middle{
+.box1 .middle{
 	position: absolute;
 	top: 100px;
 	left: 100px;
-	border-radius: 50%;
-	background: rgb(18, 53, 85) url("../img/mix.png") no-repeat fixed center;
-	background-size: 24px 24px;
 }
+
+/*2.浮动定位*/
+.box2 div{
+	float: left;
+	overflow: hidden;
+}
+
+.box2 .top{
+	margin: 0 100px;
+}
+
+.box2 .bottom{
+	margin-left: 100px;
+}
+
+/*3.多列布局*/
+.box3 .center{
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-box;
+}
+
+.box3 .top{
+	margin: 0 100px;
+}
+
+.box3 .bottom{
+	margin-left: 100px;
+}
+

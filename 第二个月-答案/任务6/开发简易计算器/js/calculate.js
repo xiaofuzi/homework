@@ -157,96 +157,23 @@ var calculator = {
 	calculator.init();
 })();
 
-/*计算类*/
-function Cal(){
-	this.expression ='1+2-9*1';	//计算表达式
-	this.expressionArray = [];	//表达式数组
-	this.numArray = [];			//运算数数组
-	this.opArray = [];			//操作符数组
-	this.result = 0;
-}
-
-//判断是否为操作符
-Cal.prototype._eqOper = function(s){
-		for( var i in operator){
-			if(s == i){
-				return true;
-			}
-		}
-		return false;
-	};
-
-//中缀计算
-Cal.prototype._oper = function(params1, params2, op){
-		//先出栈的为第二个参数
-		console.log("操作符：", op);
-		var p1 =  parseInt(params1);
-		var p2 =  parseInt(params2);
-		var result = 0;
-		switch(op){
-			case '+':
-				result = p1 + p2;
-			break;
-			case '-':
-				result = p1 - p2;
-			break;
-			case '*':
-				result = p1 * p2;
-			break;
-			case '/':
-				if(p2 == 0){
-					alert("除数不能为0！");
-				}else{
-					result = p1 / p2;
+/*
+else if(index == (_arrayExp.length - 1)){
+				_numArray.push(e);
+				//取栈顶数计算
+				_tmpResult = calculator._oper(_numArray.pop(), _numArray.pop(), _opArray.pop());
+				
+				//将所得结果以及操作符分别压栈
+				_numArray.push(_tmpResult);
+				console.log("输出结果",_tmpResult);
+				console.log("_opArray-length:", _opArray);
+				//取到最后一个数后将栈中的元素出栈计算
+				for( var i = 0; i < _opArray.length; i++){
+					_tmpResult = calculator._oper(_numArray.pop(), _numArray.pop(), _opArray.pop());
+					//将所得结果以及操作符分别压栈
+					_numArray.push(_tmpResult);
+					console.log("输出结果",_tmpResult);
+					console.log("_opArray-length:", _opArray);
 				}
-			break;
-		}
-		this.result =  result;
-	};
-
-/*将字符串表达式转换为数组表达式*/
-Cal.prototype.parseExpression = function(){
-		var expArray = [];	//表达式数组
-
-		//得到表达式数组
-		var expStr = this.expression;
-		var length = expStr.length;
-		var startIndex = 0;
-		//2-1+3-22222*2
-		for(var i = 0; i < length; i++){
-			var tmp = '';
-			if(this._eqOper(expStr[i])){
-				tmp = expStr.substring(startIndex, i);
-				startIndex = i - 0 + 1;
-				//操作数与操作符分隔开存储
-				expArray.push(tmp);
-				expArray.push(expStr[i]);
-			}else if(i == (length-1)) {
-				//表达式的最后一个数存入表达式数组
-				tmp = expStr.substr(startIndex);
-				expArray.push(tmp);
 			}
-		}
-		this.expressionArray = expArray;
-	}
-
-/*递归计算表达式，每次递归先计算优先级高的表达式*/
-Cal.prototype.calculate = function(){
-	var expArray = this.expressionArray;
-	var opArray = this.opArray;
-	var numArray = this.numArray;
-	var tmpResult = 0;
-	var _this = this;
-
-	expArray.forEach(function(e, index){
-		if(expArray.length == 1){
-			//直接返回结果
-			_this.result = parseInt(expArray[0]);
-			return true;
-		}else if(expArray.length == 3){
-			//params:params1, params2, op
-			_this._oper(expArray[0], expArray[2], expArray[1]);
-			return false;
-		}else if()
-	})
-}
+*/

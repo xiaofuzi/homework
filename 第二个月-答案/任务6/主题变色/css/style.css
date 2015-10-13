@@ -1,0 +1,820 @@
+/*————reset————*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body{
+	height: 100%;
+}
+body {
+    font-size: 14px/100% arial;
+    background: #eff0f0;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/*————public————*/
+
+.icon-down {
+    width: 9px;
+    height: 6px;
+    background: url(../images/header.png) no-repeat -52px -97px;
+    margin-left: 4px;
+}
+a:hover {
+  color: #f50;
+  text-decoration: underline;
+}
+
+/*——wrapper————*/
+
+.wrapper {
+    position: relative;
+    height: auto;
+    min-width: 1190px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+}
+
+
+/*————header————*/
+
+.headbox {
+    height: 61px;
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    width: 1190px;
+    margin: 0 auto;
+    height: 60px;
+    font-size: 12px;
+    line-height: 22px;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    width: 192px;
+    height: 60px;
+}
+
+.logo img {
+    width: 190px;
+    height: 60px;
+}
+
+.sethome {
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    left: 192px;
+    top: 0;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-right: 22px;
+    display: block;
+    float: left;
+    color: #fff;
+    text-align: center;
+    background: url(../images/header.png) no-repeat -20px -172px;
+}
+
+.col {
+    float: left;
+    height: 60px;
+}
+
+.weather {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.weather .city {
+    padding-left: 9px;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+}
+
+.weather .icon-down {
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+.clou {
+    padding-right: 10px;
+    color: #999;
+    line-height: 60px;
+    height: 60px;
+    display: inline-block;
+    cursor: auto;
+    float: left;
+}
+
+.clou .c-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 27px;
+    background-image: url(../images/a1.png);
+}
+
+.clou .c-txt {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.clou .c-txt {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.calendar {
+    text-align: center;
+    float: left;
+    width: 114px;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+    cursor: pointer;
+}
+
+.calendar .c-day {
+    display: inline-block;
+    width: 24px;
+    height: 60px;
+    line-height: 60px;
+    font-family: 'arial';
+    background: url(../images/header.png) no-repeat -20px -62px;
+}
+
+.links {
+    float: right;
+    height: 60px;
+    padding: 0 10px 0 0;
+    position: relative;
+}
+
+.links a {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 0 0 31px;
+    text-align: left;
+    color: #999;
+}
+
+.links .login {
+    background: url(../images/header.png) no-repeat -30px -110px;
+}
+
+.links .mail {
+    background: url(../images/header.png) no-repeat -95px -110px;
+}
+
+.links .browser {
+    background: url(../images/header.png) no-repeat -160px -110px;
+}
+
+.links .sikn {
+    background: url(../images/header.png) no-repeat -240px -110px;
+}
+
+.m-ad {
+    float: right;
+    width: 222px;
+    height: 60px;
+}
+
+.m-ad img {
+    display: block;
+    float: right;
+    width: 222px;
+    height: 60px;
+}
+
+
+/*————search————*/
+
+.searchbox {
+    height: 82px;
+}
+
+.searchbox1 {
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.searchbox2 {
+    position: relative;
+    height: 41px;
+    padding: 42px 0 0 166px;
+}
+
+.search {
+    width: 800px;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.search .s-logo {
+    width: 104px;
+    height: 34px;
+    position: relative;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.search .s-logo a {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.search .s-logo span {
+    background: url(../images/bd.png) left top no-repeat;
+    width: 104px;
+    height: 34px;
+    display: block;
+}
+
+.s-txtbox {
+    margin-right: 0;
+    position: relative;
+    float: left;
+}
+
+.s-txtbox .s-text {
+    width: 538px;
+    height: 38px;
+    border: 1px solid #8a8a8a;
+    border-right: 0;
+    background: url(../images/baidu-form.png) -319px 0 #fff no-repeat;
+}
+
+.s-text input {
+    display: block;
+    width: 500px;
+    height: 18px;
+    padding: 6px 0;
+    border: 0;
+    margin: 10px 30px 0 8px;
+    font: 16px arial;
+    vertical-align: middle;
+    padding: 1px 0px;
+    outline: none;
+}
+
+.s-text a {
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+}
+
+.s-text a span {
+    height: 16px;
+    width: 18px;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    background: url(../images/searchicon_widthlg.png) no-repeat;
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.s-btn .button {
+    width: 120px;
+    height: 40px;
+    background: url('http://s1.hao123img.com/v5/fg/lo/dl/7X/uJ/4/index_widthlg.png') no-repeat -20px 0;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.color {
+    float: left;
+    margin: 12px 0 0 20px;
+}
+.color span{
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #666;
+}
+.color ul{
+	display: block;
+	float: left;
+}
+.color ul li {
+    float: left;
+    width: 15px;
+    height: 15px;
+}
+.color .green{
+	background: #99cc66;
+}
+.color .red{
+	background: #ff6666;
+}
+.color .blue{
+	background: #0099cc;
+}
+.color .yellow{
+	background: #ffff66;
+}
+.sohotbox {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.sohotbox1 {
+    margin: 6px 0 26px 195px;
+    position: relative;
+    width: 442px;
+    height: 20px;
+    z-index: 103;
+}
+
+.hotbox {
+    width: 508px;
+    display: block;
+}
+
+.hotbox .title {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+
+.hotbox .title a {
+    color: #090;
+}
+
+.hotbox .t {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.hotbox .t a {
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+
+.hotbox .more {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.sohotbox .more {
+    right: -99px;
+    line-height: 16px;
+    top: 1px;
+    width: 42px;
+    height: 18px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    color: #34a637;
+    font-size: 12px;
+}
+
+
+/*————content————*/
+
+.contentbox {
+    position: relative;
+}
+
+.contentbox .menubox {
+    font-size: 14px;
+    position: relative;
+    border: 0px;
+    margin: 0 auto;
+    width: 1190px;
+    height: 38px;
+    border-top: 2px solid #099e6a;
+    border-bottom: 10px solid #eaeaea;
+    background-color: #fcfcfc;
+}
+.contentbox .menu {
+    display: block;
+    font-size: 14px;
+    position: relative;
+    margin: 0 auto;
+    width: 1190px;
+    height: 38px;
+    border-top: 2px solid #099e6a;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fcfcfc;
+}
+
+.contentbox .menu li:nth-child(1) {
+    width: 70px;
+}
+
+.contentbox .menu li {
+    width: 124px;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.contentbox .menu li a{
+	color:#118850;
+	text-decoration: none;
+}
+.contentbox .menu li span:hover{
+	color:#118850;
+}
+.contentbox .menu li span {
+    display: block;
+    height: 100%;
+    border-right: 0;
+    text-align: center;
+    color: #333;
+    position: relative;
+    font-family: Microsoft Yahei;
+    font-size: 16px;
+    border-left: 0;
+}
+
+.contentbox .content {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.contentbox .content .c-left {
+    width: 280px;
+    float: left;
+    position: relative;
+}
+
+.contentbox .content .c-left .cl-banner {
+    width: 278px;
+    background-color: #fcfcfc;
+    border: 1px solid #cecece;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.contentbox .content .c-left .cl-banner .clb-content .item-pic {
+    width: 278px;
+    height: 70px;
+}
+
+.clb-content .item-text {
+    padding: 7px 10px;
+    margin-right: -10px;
+    display: block;
+}
+
+.clb-content .item-text .txt {
+    display: inline-block;
+    margin-right: 10px;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: top;
+}
+
+.clb-content .item-text .txt a {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.contentbox .content .c-right {
+    width: 900px;
+    float: right;
+}
+
+.clb-btn a {
+    width: 20px;
+    height: 34px;
+    background-image: url(http://s0.hao123img.com/v4/ro/3w/os/l3/q9/5/index_icon.png);
+    background-repeat: no-repeat;
+    background-color: rgba(206, 206, 206, 0.6);
+    margin-top: -17px;
+}
+
+.clb-btn .btn-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-position: -563px -1123px
+}
+
+.clb-btn .btn-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-position: -586px -1123px;
+}
+
+.sortbox {
+    position: relative;
+    width: 100%;
+    height: 187px;
+    background-color: #fff;
+}
+
+.sortbox .sortbox0 {
+    height: 258px;
+    width: 278px;
+    border-bottom: 0;
+    background-color: #fcfcfc;
+    border: 1px solid #cecece;
+}
+
+.sortbox1 {
+    padding: 9px 0 0 18px;
+}
+
+.sortbox1 ul {
+    display: block;
+}
+
+.sortbox1 .sortlist {
+    display: inline-block;
+    margin-bottom: 6px;
+    float: left;
+}
+
+.sortlist .slcbox {
+    width: 128px;
+}
+
+.sortlist .slcbox .sl-content {
+    padding-left: 25px;
+    float: left;
+    position: relative;
+    padding-top: 15px;
+}
+
+.sortlist .slcbox .sl-content a {
+    font-size: 14px;
+}
+
+.sortlist .slcbox .sl-content .split {
+    padding: 0 5px;
+    color: #999;
+    position: relative;
+    top: -1px;
+}
+
+.sortlist .slcbox .sl-content .star-icon {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    background: url('http://s1.hao123img.com/v5/Hz/mn/Ev/BX/8z/2/index_menus_widthlg.png') no-repeat;
+}
+
+.sortlist .slcbox .sl-content .i-tv {
+    background-position: -20px -81px;
+}
+
+.sortlist .slcbox .sl-content .i-game {
+    background-position: -19px -301px;
+}
+
+.sortlist .slcbox .sl-content .i-movie {
+    background-position: -20px -160px;
+}
+
+.sortlist .slcbox .sl-content .i-comic {
+    background-position: -20px -381px;
+}
+
+.sortlist .slcbox .sl-content .i-toutiao {
+    background-position: -20px -100px;
+}
+
+.sortlist .slcbox .sl-content .i-travel {
+    background-position: -20px -261px;
+}
+
+.sortlist .slcbox .sl-content .i-caipiao {
+    background-position: -20px -21px;
+}
+
+.sortlist .slcbox .sl-content .i-gaoxiao {
+    background-position: -20px -121px;
+}
+
+.sortlist .slcbox .sl-content .i-tuan {
+    background-position: -20px -281px;
+}
+
+.sortlist .slcbox .sl-content .i-music {
+    background-position: -20px -362px;
+}
+
+.sortlist .slcbox .sl-content .i-life {
+    background-position: -20px -221px;
+}
+
+.sortlist .slcbox .sl-content .i-food {
+    background-position: -19px -42px;
+}
+
+.c-right .linksbox {
+    width: 898px;
+    border-width: 1px;
+    position: relative;
+    border: 1px solid #adb;
+    background-color: #fcfcfc;
+}
+
+.linksbox .linksTop ul {
+    width: 868px;
+    padding-left: 23px;
+    padding-top: 11px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.linksbox .linksTop .linksTlist {
+    width: 125px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    margin-right: 4px;
+    padding-left: 9px;
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.linksbox .linksTop .linksTlist a {
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.linksbox .linksTop .linksTlist .a-l {
+    padding-left: 25px;
+}
+
+.linksbox .linksTop .linksTlist .a-r {}
+
+.linksbox .linksBBox {
+    padding-top: 5px;
+}
+
+.linksbox .linksBBox .linksb .linksHr {
+    margin-left: 30px;
+    margin-right: 30px;
+    top: 0;
+    position: relative;
+    margin: 0 14px 0 14px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.linksbox .linksBBox .linksb .linksBC{
+	  margin-left: 30px;
+	    padding-bottom: 3px;
+	    padding-top: 4px;
+}
+.linksbox .linksBBox .linksb .linksBC span{
+	width: 138px;
+  position: relative;
+    display: inline-block;
+    height: 30px;
+  line-height: 30px;
+  	font-size: 14px;
+}
+.linksbox .linksBBox .linksb .linksBC a{
+	display: inline-block;
+	padding: 1px 4px;
+}
+.adbar{
+	  width: 900px;
+	  overflow: hidden;
+}
+.adbar .ad{
+	height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-left: 25px;
+}
+.adbar .ad span{
+	display: inline-block;
+  padding-right: 25px;
+}
+.adbar .ad span a{
+	  color: #3b5998;
+}
+.ghsbox{
+	  width: 898px;
+	  position: relative;
+	  margin-bottom: 10px;
+	    background-color: #fcfcfc;
+	      border: 1px solid #cecece;
+}
+.ghsbox .youlike{
+	width: 20px;
+  height: 60px;
+  display: block;
+  background: url(../images/new_index_icon.png);
+  background-position: 0 0;
+  position: absolute;
+  left: 0;
+  top: 28px;
+  z-index: 10;
+}
+.ghsbox .ghs-next{
+	  width: 21px;
+  height: 61px;
+  display: block;
+  background: url(../images/new_index_icon.png);
+  background-position: 0 -145px;
+  position: absolute;
+  right: -1px;
+  top: 25px;
+  z-index: 10;
+  outline: 0;
+}
+.ghs .ghs-content{
+	padding: 5px 0;
+}
+.ghs .ghs-content .ghs-g{
+	padding: 0 0 0 35px;
+  width: 862px;
+  height: 32px;
+    line-height: 32px;
+  position: relative;
+}
+.ghs .ghs-content .games{
+	padding-right: 40px;
+	color: #118850;
+  overflow: hidden;
+  height: 32px;
+  line-height: 32px;
+  	  float: left;
+}
+.ghs .ghs-content .ghs-gc{
+	  display: inline-block;
+	  float: left;
+	  height: 32px;
+}
+.ghs .ghs-content .ghs-g .ghs-gc span{
+	display: inline-block;
+	width: 115px;
+	text-align: left;
+  padding: 0;
+  overflow: hidden;
+  height: 32px;
+  line-height: 32px;
+}
+.ghs .ghs-content .ghs-gc span a{
+	  display: inline-block;
+	  font-size: 14px;
+}
+.ghs .ghs-content .changeBtn{
+	display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  color:#333;
+  float: right;
+}
+.ghs .ghs-content .changeBtn:hover {
+  color: #f00;
+  text-decoration: none;
+}
